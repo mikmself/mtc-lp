@@ -1,0 +1,52 @@
+/* Default styles for mobile (less than 768px) */
+.responsive-paragraph {
+    margin: 0 auto;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 1cm;
+}
+
+/* Styles for tablets and larger screens (768px and above) */
+@media (min-width: 768px) {
+    .responsive-paragraph {
+        text-align: left;
+        margin-right: 4cm !important;
+    }
+}
+.marquee-right-to-left,
+.marquee-left-to-right {
+    display: flex;
+    width: max-content;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Right to Left Marquee */
+.marquee-right-to-left {
+    animation: marqueeRTL 15s linear infinite;
+}
+
+/* Left to Right Marquee */
+.marquee-left-to-right {
+    animation: marqueeLTR 15s linear infinite;
+}
+
+/* Keyframes for right to left */
+@keyframes marqueeRTL {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Keyframes for left to right */
+@keyframes marqueeLTR {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

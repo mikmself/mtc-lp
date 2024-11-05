@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT MIKM TECHNOLOGY CREATIVE - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans bg-[#F0F3FF]">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div class="flex items-center">
+            <!-- Company Logo -->
+            <img src="assets/images/logo.png" alt="PT MIKM TECHNOLOGY CREATIVE Logo" class="h-16 mr-3">
+            <h1 class="text-xl font-bold text-gray-800">PT MIKM TECHNOLOGY CREATIVE</h1>
+        </div>
+
+        <!-- Hamburger Button for Mobile/Tablet -->
+        <div class="block lg:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div id="menu" class="hidden lg:flex">
+            <a href="#" class="text-gray-600 hover:text-[#836FFF] mx-4">Home</a>
+            <a href="#" class="text-gray-600 hover:text-[#836FFF] mx-4">About Us</a>
+            <a href="#" class="text-gray-600 hover:text-[#836FFF] mx-4">Services</a>
+            <a href="#" class="text-gray-600 hover:text-[#836FFF] mx-4">Testimonials</a>
+            <a href="#" class="text-gray-600 hover:text-[#836FFF] mx-4">Blog</a>
+            <a href="#" class="text-gray-600 hover:text-[#836FFF] mx-4">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <a href="#" class="block text-gray-600 hover:bg-blue-100 px-4 py-2">Home</a>
+        <a href="#" class="block text-gray-600 hover:bg-blue-100 px-4 py-2">About Us</a>
+        <a href="#" class="block text-gray-600 hover:bg-blue-100 px-4 py-2">Services</a>
+        <a href="#" class="block text-gray-600 hover:bg-blue-100 px-4 py-2">Testimonials</a>
+        <a href="#" class="block text-gray-600 hover:bg-blue-100 px-4 py-2">Blog</a>
+        <a href="#" class="block text-gray-600 hover:bg-blue-100 px-4 py-2">Contact Us</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-[#F0F3FF] text-gray-900 py-20">
+    <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
+
+        <!-- Left Side: Logo and Heading -->
+        <div class="lg:w-1/2 text-left lg:pr-10 mt-10 lg:mt-0 px-4 md:px-6 lg:px-0"> <!-- Added padding for mobile -->
+            <!-- Company Title and Tagline -->
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Welcome to PT MIKM TECHNOLOGY CREATIVE</h2>
+            <p class="text-base sm:text-lg mb-6">
+                At PT MIKM TECHNOLOGY CREATIVE, we are dedicated to delivering innovative technology solutions tailored to your business needs.
+                Whether you need a modern website, a robust backend system, or a mobile application, we have the expertise
+                to help your business thrive in the digital age.
+            </p>
+            <p class="text-base sm:text-lg mb-6">
+                Our team is highly skilled in a wide range of services, including custom web development, mobile app creation,
+                desktop software, and even consultation for your coding projects. With PT MIKM TECHNOLOGY CREATIVE, you can trust that your project
+                is in capable hands.
+            </p>
+            <a href="#services" class="bg-[#4A4A75] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#3b3b66] transition-all">
+                Explore Our Services
+            </a>
+        </div>
+
+        <!-- Right Side: Image or Illustration -->
+        <div class="lg:w-1/2 w-full text-center lg:text-right">
+            <img src="assets/images/logo.png" alt="Technology Illustration" class="w-1/2 sm:w-1/3 mx-auto lg:mx-0 lg:w-2/5" style="margin: auto; @media (min-width: 768px) { margin: auto; } @media (min-width: 1024px) { margin-left: 8cm; }">
+        </div>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+
+        <!-- Flex Container for Image and Text -->
+        <div class="flex flex-col sm:flex-row-reverse justify-center items-center space-x-6 mb-20 mt-20">
+            <!-- Optional Image or Illustration -->
+            <img src="assets/images/about-us-image.png" alt="About Us Illustration" class="w-1/2 sm:w-2/5 mb-4 sm:mb-0">
+
+            <!-- Text Content -->
+            <p class="text-lg text-gray-600 max-w-3xl mb-8 responsive-paragraph">
+                PT MIKM TECHNOLOGY CREATIVE is a technology company under PT KBM, Universitas Amikom Purwokerto. We specialize in website development, backend REST API creation, mobile and desktop app development, as well as project consultations for students and professionals.
+            </p>
+        </div>
+
+        <!-- List of Services -->
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+            <!-- Web Development Service -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-[#F0F3FF] hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+                <!-- Icon for Web Development -->
+                <div class="mb-4">
+                    <img src="assets/images/website.svg" alt="Web Development Icon" class="w-80 h-80 mx-auto">
+                </div>
+                <h3 class="font-semibold text-lg text-gray-800">Web Development</h3>
+                <p class="text-gray-600">Building responsive and user-friendly websites tailored to your needs.</p>
+            </div>
+
+            <!-- App Development Service -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-[#F0F3FF] hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+                <!-- Icon for App Development -->
+                <div class="mb-4">
+                    <img src="assets/images/mobile.svg" alt="App Development Icon" class="w-80 h-80 mx-auto">
+                </div>
+                <h3 class="font-semibold text-lg text-gray-800">App Development</h3>
+                <p class="text-gray-600">Creating mobile and desktop applications for seamless user experiences.</p>
+            </div>
+
+            <!-- Consultations Service -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-[#F0F3FF] hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+                <!-- Icon for Consultations -->
+                <div class="mb-4">
+                    <img src="assets/images/consultatin.svg" alt="Consultations Icon" class="w-80 h-80 mx-auto">
+                </div>
+                <h3 class="font-semibold text-lg text-gray-800">Consultations</h3>
+                <p class="text-gray-600">Offering expert advice for both students and professionals on tech projects.</p>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md max-w-2xl mx-auto mb-8 mt-20">
+            <h3 class="font-semibold text-lg text-gray-800 mb-2">What Our Clients Say</h3>
+            <p class="text-gray-600 italic">"PT MIKM TECHNOLOGY CREATIVE helped us transform our digital presence. Their dedication and expertise are unmatched!" - A satisfied client</p>
+        </div>
+
+        <!-- Call to Action -->
+        <a href="#services" class="bg-[#4A4A75] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#3b3b66] transition-all" style="position: relative;top: .2cm">
+            Learn More About Our Services
+        </a>
+    </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Website Development</h3>
+                <p class="text-gray-600">We build responsive and modern websites tailored to your business needs using the latest technologies.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Backend REST API</h3>
+                <p class="text-gray-600">Our team creates secure and scalable backend systems for your applications using RESTful API standards.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Mobile App Development</h3>
+                <p class="text-gray-600">We develop high-quality mobile apps for both Android and iOS platforms with user-friendly interfaces.</p>
+            </div>
+            <!-- Service 4 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Desktop App Development</h3>
+                <p class="text-gray-600">Our team can create custom desktop applications to enhance your productivity and business operations.</p>
+            </div>
+            <!-- Service 5 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Coding Consultation</h3>
+                <p class="text-gray-600">We offer coding consultations for projects, assignments, and final-year thesis for students and professionals.</p>
+            </div>
+            <!-- Service 6 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Design Poster/Social Media</h3>
+                <p class="text-gray-600">Our design team provides creative and visually appealing poster designs and social media content creation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Testimonials</h2>
+
+        <!-- Marquee from right to left -->
+        <div class="overflow-hidden">
+            <div class="marquee-right-to-left flex space-x-8">
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"PT MIKM TECHNOLOGY CREATIVE transformed our online presence. Their attention to detail is exceptional!" - Sarah Thompson</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"The app they built for our company has been a game-changer. I highly recommend their services." - Michael Rivera</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"Superb customer service! They delivered exactly what we were looking for." - Jessica Brown</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"Their backend API integration is seamless and highly reliable." - Daniel Williams</p>
+                </div>
+                <!-- Duplicate items for seamless effect -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"PT MIKM TECHNOLOGY CREATIVE transformed our online presence. Their attention to detail is exceptional!" - Sarah Thompson</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"The app they built for our company has been a game-changer. I highly recommend their services." - Michael Rivera</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marquee from left to right -->
+        <div class="overflow-hidden mt-8">
+            <div class="marquee-left-to-right flex space-x-8">
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"They helped us develop a complex mobile app with ease. Great teamwork!" - Emily Davis</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"The best in web development! Our website looks amazing now." - John Stewart</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"Fantastic experience! The team is professional and skilled." - David Johnson</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"I am extremely satisfied with their consulting services." - Olivia Martinez</p>
+                </div>
+                <!-- Duplicate items for seamless effect -->
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"They helped us develop a complex mobile app with ease. Great teamwork!" - Emily Davis</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md w-80">
+                    <p class="text-gray-600">"The best in web development! Our website looks amazing now." - John Stewart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#F0F3FF] text-gray-900 py-12">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
+        <!-- Left Side: Contact Information -->
+        <div class="md:w-1/2 w-full text-center md:text-left px-4">
+            <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+            <ul class="text-gray-600 space-y-2">
+                <li>
+                    <strong>Telephone:</strong> <a href="http://wa.me/6285133746803" class="text-blue-600">+6285133746803</a>
+                </li>
+                <li>
+                    <strong>Email:</strong> <a href="mailto:mail.ptmtc@gmail.com" class="text-blue-600">mail.ptmtc@gmail.com</a>
+                </li>
+                <li>
+                    <strong>Address:</strong> RT 01 RW 03, Pasir Kidul, Purwokerto Barat, Banyumas.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Email Inquiry Form -->
+        <div class="md:w-1/2 w-full px-4">
+            <h3 class="text-lg font-bold mb-4 text-left">Send Us a Message</h3> <!-- Align header to the left -->
+            <form action="YOUR_EMAIL_SCRIPT.php" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="border border-gray-300 rounded-lg p-2 w-full" />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="border border-gray-300 rounded-lg p-2 w-full" />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" required class="border border-gray-300 rounded-lg p-2 w-full h-24"></textarea>
+                </div>
+                <button type="submit" class="bg-[#4A4A75] text-white px-6 py-2 rounded-full hover:bg-[#3b3b66] transition-all">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container mx-auto text-center mt-6">
+        <p class="text-gray-600">&copy; 2024 PT MIKM TECHNOLOGY CREATIVE. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</html>
