@@ -103,47 +103,75 @@
         100% { transform: translateY(0px); }
     }
 </style>
-<section class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+<section class="py-16 bg-gradient-to-r from-blue-50 via-blue-100 to-purple-50">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#836FFF] to-[#00C9FF] mb-6 animate-fade-in">
+            About Us
+        </h2>
+        
+        <!-- About Us Content Section -->
         <div class="flex flex-col sm:flex-row-reverse justify-center items-center space-x-6 mb-20 mt-20">
-            <img src="assets/images/about-us-image.png" alt="About Us Illustration" class="w-1/2 sm:w-2/5 mb-4 sm:mb-0">
-            <p class="text-lg text-gray-600 max-w-3xl mb-8 responsive-paragraph">
+            <div class="relative w-full sm:w-2/5 mb-6 sm:mb-0">
+                <div class="shadow-2xl transform transition-all duration-500 hover:scale-110 rounded-lg">
+                    <img src="assets/images/about-us-image.png" alt="About Us Illustration" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+            <p class="text-lg text-gray-700 max-w-3xl mb-8 animate-fade-in" style="animation-delay: 0.5s;">
                 PT MIKM TECHNOLOGY CREATIVE is a technology company under PT KBM, Universitas Amikom Purwokerto. We specialize in website development, backend REST API creation, mobile and desktop app development, as well as project consultations for students and professionals.
             </p>
         </div>
-        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-[#F0F3FF] hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+
+        <!-- Service Offerings Section -->
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-6 mb-8">
+            <div class="bg-gradient-to-r from-[#836FFF] to-[#00C9FF] text-white p-6 rounded-lg shadow-xl hover:bg-[#836FFF] transform transition-all duration-300 hover:scale-105">
                 <div class="mb-4">
-                    <img src="assets/images/website.svg" alt="Web Development Icon" class="w-80 h-80 mx-auto">
+                    <img src="assets/images/website.svg" alt="Web Development Icon" class="w-24 h-24 mx-auto transform transition-all duration-300 hover:rotate-12">
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800">Web Development</h3>
-                <p class="text-gray-600">Building responsive and user-friendly websites tailored to your needs.</p>
+                <h3 class="font-semibold text-2xl mb-2">Web Development</h3>
+                <p class="text-lg">Building responsive and user-friendly websites tailored to your needs with the latest technologies.</p>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-[#F0F3FF] hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+            <div class="bg-gradient-to-r from-[#836FFF] to-[#00C9FF] text-white p-6 rounded-lg shadow-xl hover:bg-[#836FFF] transform transition-all duration-300 hover:scale-105">
                 <div class="mb-4">
-                    <img src="assets/images/mobile.svg" alt="App Development Icon" class="w-80 h-80 mx-auto">
+                    <img src="assets/images/mobile.svg" alt="App Development Icon" class="w-24 h-24 mx-auto transform transition-all duration-300 hover:rotate-12">
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800">App Development</h3>
-                <p class="text-gray-600">Creating mobile and desktop applications for seamless user experiences.</p>
+                <h3 class="font-semibold text-2xl mb-2">App Development</h3>
+                <p class="text-lg">Creating mobile and desktop applications for seamless user experiences, with a focus on performance.</p>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:bg-[#F0F3FF] hover:shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+            <div class="bg-gradient-to-r from-[#836FFF] to-[#00C9FF] text-white p-6 rounded-lg shadow-xl hover:bg-[#836FFF] transform transition-all duration-300 hover:scale-105">
                 <div class="mb-4">
-                    <img src="assets/images/consultatin.svg" alt="Consultations Icon" class="w-80 h-80 mx-auto">
+                    <img src="assets/images/consultatin.svg" alt="Consultations Icon" class="w-24 h-24 mx-auto transform transition-all duration-300 hover:rotate-12">
                 </div>
-                <h3 class="font-semibold text-lg text-gray-800">Consultations</h3>
-                <p class="text-gray-600">Offering expert advice for both students and professionals on tech projects.</p>
+                <h3 class="font-semibold text-2xl mb-2">Consultations</h3>
+                <p class="text-lg">Offering expert advice for both students and professionals on tech projects, bringing years of industry experience.</p>
             </div>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md max-w-2xl mx-auto mb-8 mt-20">
-            <h3 class="font-semibold text-lg text-gray-800 mb-2">What Our Clients Say</h3>
-            <p class="text-gray-600 italic">"PT MIKM TECHNOLOGY CREATIVE helped us transform our digital presence. Their dedication and expertise are unmatched!" - A satisfied client</p>
+
+        <!-- Client Testimonial Section -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-lg max-w-2xl mx-auto mb-8 mt-20 animate-fade-in" style="animation-delay: 1s;">
+            <h3 class="font-semibold text-2xl text-gray-800 mb-4">What Our Clients Say</h3>
+            <p class="text-lg text-gray-600 italic">
+                "PT MIKM TECHNOLOGY CREATIVE helped us transform our digital presence. Their dedication and expertise are unmatched!" - A satisfied client
+            </p>
         </div>
-        <a href="#services" class="bg-[#4A4A75] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#3b3b66] transition-all" style="position: relative;top: .2cm">
+
+        <!-- Call to Action Button -->
+        <a href="#services" class="bg-[#4A4A75] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#3b3b66] transform transition-all duration-300 hover:scale-105 animate-fade-in" style="animation-delay: 1.5s;">
             Learn More About Our Services
         </a>
     </div>
 </section>
+
+<!-- Custom Animations -->
+<style>
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .animate-fade-in {
+        animation: fade-in 1.5s ease-in-out forwards;
+    }
+</style>
 <section id="services" class="py-16 bg-white">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Services</h2>
