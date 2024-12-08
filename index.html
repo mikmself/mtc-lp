@@ -40,32 +40,69 @@
 </nav>
 <section class="bg-gradient-to-r from-blue-100 via-blue-200 to-purple-100 text-gray-900 py-20 relative overflow-hidden">
     <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
+        <!-- Left Column (Text Section) -->
         <div class="lg:w-1/2 text-left lg:pr-10 mt-10 lg:mt-0 px-4 md:px-6 lg:px-0">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#836FFF] to-[#00C9FF] mb-4 animate-fade-in">
                 Welcome to <span class="text-purple-700">PT MIKM TECHNOLOGY CREATIVE</span>
             </h2>
-            <p class="text-base sm:text-lg mb-6 animate-fade-in" style="animation-delay: 0.5s;">
+            <p class="text-lg sm:text-xl mb-6 animate-fade-in" style="animation-delay: 0.5s;">
                 At PT MIKM TECHNOLOGY CREATIVE, we are dedicated to delivering innovative technology solutions tailored to your business needs.
                 Whether you need a modern website, a robust backend system, or a mobile application, we have the expertise to help your business thrive in the digital age.
             </p>
-            <p class="text-base sm:text-lg mb-6 animate-fade-in" style="animation-delay: 1s;">
+            <p class="text-lg sm:text-xl mb-6 animate-fade-in" style="animation-delay: 1s;">
                 Our team is highly skilled in a wide range of services, including custom web development, mobile app creation,
                 desktop software, and even consultation for your coding projects. With PT MIKM TECHNOLOGY CREATIVE, you can trust that your project
                 is in capable hands.
             </p>
-            <a href="#services" class="btn-primary animate-fade-in" style="animation-delay: 1.5s;">
+            <a href="#services" class="btn-primary py-3 px-8 rounded-lg bg-gradient-to-r from-[#836FFF] to-[#00C9FF] text-white font-semibold text-lg shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg animate-fade-in" style="animation-delay: 1.5s;">
                 Explore Our Services
             </a>
         </div>
+        
+        <!-- Right Column (Image Section) -->
         <div class="lg:w-1/2 w-full text-center lg:text-right relative">
-            <div class="floating-effect">
-                <img src="assets/images/logo.png" alt="Technology Illustration" class="responsive-image">
+            <div class="floating-effect animate-slide-up">
+                <img src="assets/images/logo.png" alt="Technology Illustration" class="responsive-image scale-110 shadow-2xl transition-all duration-300 hover:scale-125">
             </div>
         </div>
     </div>
-    <div class="absolute top-10 left-10 bg-purple-300 rounded-full w-32 h-32 opacity-50 animate-pulse"></div>
-    <div class="absolute bottom-10 right-10 bg-blue-300 rounded-full w-40 h-40 opacity-50 animate-pulse"></div>
+
+    <!-- Animated Floating Circles -->
+    <div class="absolute top-10 left-10 bg-purple-300 rounded-full w-32 h-32 opacity-50 animate-pulse transform scale-110"></div>
+    <div class="absolute bottom-10 right-10 bg-blue-300 rounded-full w-40 h-40 opacity-50 animate-pulse transform scale-110"></div>
+
+    <!-- Parallax Background Effect -->
+    <div class="absolute inset-0 bg-cover bg-center bg-fixed opacity-20" style="background-image: url('assets/images/technology-background.jpg');"></div>
 </section>
+
+<!-- Custom Animations and Effects -->
+<style>
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .animate-fade-in {
+        animation: fade-in 1s ease-in-out forwards;
+    }
+
+    @keyframes slide-up {
+        0% { transform: translateY(30px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide-up {
+        animation: slide-up 1s ease-out forwards;
+    }
+
+    .floating-effect {
+        animation: float 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+</style>
 <section class="py-16 bg-white">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
